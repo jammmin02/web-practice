@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상태 관련 가상 클래스 예제</title>
+    <style>
+        /* 버튼 hover, active 상태 */
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: yellow;
+        }
+        .btn:active {
+            background-color: red;
+            color: white;
+        }
+
+        /* 입력 필드 focus 상태 */
+        input {
+            padding: 8px;
+            font-size: 14px;
+            border: 2px solid gray;
+            outline: none;
+        }
+        input:focus {
+            border-color: blue;
+            background-color: lightblue;
+        }
+        input:focus-visible {
+            outline: 3px solid orange;
+        }
+
+        /* 체크박스 checked 상태 */
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+        }
+        input[type="checkbox"]:checked + label {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* 비활성화된 input */
+        input:disabled {
+            background-color: lightgray;
+            color: gray;
+        }
+
+        /* 활성화된 input */
+        input:enabled {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>상태 관련 가상 클래스 테스트</h2>
+
+    <!-- Hover & Active -->
+    <button class="btn">마우스를 올려보세요!</button>
+
+    <br><br>
+
+    <!-- Focus -->
+    <label for="input1">입력 필드 (포커스 시 변경)</label>
+    <br>
+    <input type="text" id="input1" placeholder="여기에 입력하세요">
+
+    <br><br>
+
+    <!-- Checked -->
+    <input type="checkbox" id="checkbox1">
+    <label for="checkbox1">체크하면 색상이 변경됩니다.</label>
+
+    <br><br>
+
+    <!-- Disabled & Enabled -->
+    <label for="input2">활성화된 입력 필드</label>
+    <br>
+    <input type="text" id="input2" placeholder="사용 가능">
+
+    <br><br>
+
+    <label for="input3">비활성화된 입력 필드</label>
+    <br>
+    <input type="text" id="input3" placeholder="사용 불가" disabled>
+
+</body>
+</html>

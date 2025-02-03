@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조 관련 가상 클래스</title>
+    <style>
+        /* 공통 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .container p {
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid gray;
+            text-align: center;
+        }
+
+        /* 구조 관련 가상 클래스 */
+        .container p:first-of-type { background-color: yellow; }
+        .container p:nth-of-type(2) { color: red; font-weight: bold; }
+        .container p:last-of-type { background-color: lightblue; }
+        .container p:nth-last-of-type(2) { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>첫 번째 자식 (yellow 배경)</p>
+        <p>두 번째 자식 (빨간색 & 볼드)</p>
+        <p>세 번째 자식</p>
+        <p>네 번째 자식</p>
+        <p>뒤에서 두 번째 자식 (초록색 & 볼드)</p>
+        <p>마지막 자식 (lightblue 배경)</p>
+    </div>
+
+</body>
+</html>
