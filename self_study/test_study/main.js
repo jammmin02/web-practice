@@ -225,5 +225,5 @@ const a = 'Hello!';
 // reverse : 배열을 뒤집기
 // join : 배열을 합쳐 문자로 반환
 
-const b = a.split('').reverse().join('');
+const b = a.split('').reverse().join(''); // 메소드 체이닝
 console.log(b);

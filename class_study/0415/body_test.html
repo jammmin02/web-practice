@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML body 태그 공부하기</title>
+</head>
+<body>
+  <!-- 제목 태그: h1 ~ h6 (계층 구조) -->
+  <!-- 논리적 중요도를 기준으로 선택하기 : 디자인 XX-->
+  <!-- 계층구조를 반드시 지킬 것--> 
+  <h1>제목 1단계 (h1)</h1>
+  <h2>제목 2단계 (h2)</h2>
+  <h3>제목 3단계 (h3)</h3>
+  <h4>제목 4단계 (h4)</h4>
+  <h5>제목 5단계 (h5)</h5>
+  <h6>제목 6단계 (h6)</h6>
+
+  <hr> <!-- 구분선 -->
+
+  <!-- 단락 태그: p -->
+  <!-- 문장마다 P를 남발하지 말 것 -->
+  <!-- 중첩사용 금지-->
+  <p>이것은 단락을 표현하는 <strong>&lt;p&gt;</strong> 태그입니다.</p>
+  <p>여러 문장을 묶을 때 사용하며, 자동으로 줄바꿈이 적용됩니다.</p>
+  
+
+  <hr> <!-- 구분선 -->
+
+  <!-- 이미지 삽입 태그: img -->
+  <h2>이미지 삽입 예제</h2>
+  <!-- src: 이미지 경로 -->
+  <!-- alt: 이미지 설명 (대체 텍스트) -->
+  <img src="https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero1.png" alt="샘플 이미지">
+
+  <hr>
+
+  <!-- 하이퍼링크 태그: a -->
+  <h2>하이퍼링크 예제</h2>
+  <a href="https://www.google.com" target="_blank">구글로 이동하기</a>
+
+  <hr>
+
+  <!-- 목록 태그: ul, oi, li -->
+  <!-- ul: 순서 없는 목록 -->
+  <!-- ol: 순서 있는 목록 / 순서가 의미가 있을 때때-->
+  <!-- li: 목록 항목 -->
+  <h2>목록 예제</h2>
+  <p>순서 없는 목록</p>
+    <ul>
+      <li>사과</li>
+      <li>바나나</li>
+      <li>파인애플</li>
+    </ul>
+
+  <hr>
+  <p>순서 있는 목록</p>
+    <ol>
+      <li>로그인하세요</li>
+      <li>상품을 선택하세요</li>
+      <li>결제하세요</li>
+    </ol>
+  <hr>
+
+  <!-- 구조화 태그: div, section, article -->
+  <h2>구조화 및 구획 예제</h2>
+
+  <div style="background-color: #f0f0f0; padding: 10px;">
+    <h3>div 영역</h3>
+    <p>div는 레이아웃을 구성하는 가장 일반적인 블록 요소입니다.</p>
+  </div>
+
+  <section style="background-color: #e0ffe0; padding: 10px;">
+    <h3>section 영역</h3>
+    <p>section은 문서 내 주제를 나눌 때 사용합니다.</p>
+  </section>
+
+  <article style="background-color: #ffe0e0; padding: 10px;">
+    <h3>article 영역</h3>
+    <p>article은 독립적으로 배포 가능한 콘텐츠 (예: 블로그 글, 뉴스 기사)에 적합합니다.</p>
+  </article>
+
+</body>
+</html>
