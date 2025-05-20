@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+  <style>
+    html { 
+      font-size: 10px;
+    }
+    .container .item {
+      text-align: center;
+      width: 100px;
+      height: 50px;
+      background-color: blue;
+      border: .5px dashed red;
+    }
+    .container .item:hover {
+      background-color: pink;
+      transition: 1s;
+    }
+    .passwd:focus {
+      background-color: yellow;
+      transition: 1s;
+      text-decoration-line: line-through;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" class="passwd"></input>
+    <div id="test" class="item">1</div>
+    <div class="item">
+      <div class="subitem">2</div>
+    </div>
+    <div class="item">3</div>
+  </div>
+</body>
+</html> 
