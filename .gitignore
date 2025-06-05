@@ -1,0 +1,38 @@
+# 빌드 결과물, 캐시, snapshot
+*.bundle.js
+*.hash.*
+*.snapshot*
+*.ps1
+*.cmd
+
+# DB 파일
+*.mdb
+
+# 기타 설치 스크립트
+browserslist*
+detect-libc*
+download-lmdb*
+
+# 노드 모듈
+node_modules/
+
+# 환경변수
+.env
+
+# 로그
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 빌드 폴더 (혹시 나중에 추가되면)
+dist/
+build/
+.cache/
+.parcel-cache/
+.node_modules/
+
+# 이미지 파일
+*.png
+*.jpg
