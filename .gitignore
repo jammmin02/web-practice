@@ -26,7 +26,7 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# 빌드 폴더 (혹시 나중에 추가되면)
+# 빌드 폴더
 dist/
 build/
 .cache/
