@@ -1,0 +1,20 @@
+// main.scss
+.main-cantainer {
+  border: 20px yellow solid;
+  .card_container {
+  border: blue .5px dashed ;
+    
+    .card {
+      width: 100px;
+      height: 200px;
+      background-color: cadetblue;
+    }
+  }
+}
+
+// .card_container .card {
+//   width: 100px;
+//   height: 200px;
+//   background-color: red;
+// }
+
