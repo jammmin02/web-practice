@@ -1,3 +1,5 @@
+.vscode/
+
 # 빌드 결과물, 캐시, snapshot
 *.bundle.js
 *.hash.*
@@ -36,3 +38,4 @@ build/
 # 이미지 파일
 *.png
 *.jpg
+
